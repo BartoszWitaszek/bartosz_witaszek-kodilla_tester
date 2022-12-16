@@ -27,9 +27,9 @@ public class Notebook {
     }
 
     public void checkYear() {
-        if (this.price <= 600 & this.year <= 2009) {
+        if (this.price <= 600 && this.year <= 2009) {
             System.out.println("This Notebook is old and cheap.");
-        } else if (this.price <= 1000 & this.year <=2018) {
+        } else if (this.price <= 1000 && this.year <=2018) {
             System.out.println("This notebook is pretty new and in good price.");
         }
         else System.out.println("This notebook is new and quite expensive.");
