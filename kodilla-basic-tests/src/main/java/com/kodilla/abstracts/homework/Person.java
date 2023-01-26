@@ -12,9 +12,9 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Job driver = new Driver();
-        Job comedian = new Comedian();
-        Job teacher = new Teacher();
+        Job driver = new Driver(5000);
+        Job comedian = new Comedian(2500);
+        Job teacher = new Teacher(3000);
         Person tomek = new Person("Tomek", 30, driver);
         Person joanna = new Person("Joanna", 25, comedian);
         Person zenon = new Person("Zenon", 45, teacher);

@@ -2,8 +2,8 @@ package com.kodilla.abstracts.homework;
 
 public class Driver extends Job {
 
-    public Driver() {
-        super(5000, "car driving and goods delivery.");
+    public Driver(int salary) {
+        super(salary, "car driving and goods delivery.");
     }
 
     @Override

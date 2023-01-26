@@ -1,8 +1,8 @@
 package com.kodilla.abstracts.homework;
 
 public class Teacher extends Job {
-    public Teacher() {
-        super(3000, "teaching and checking homeworks.");
+    public Teacher(int salary) {
+        super(salary, "teaching and checking homeworks.");
     }
 
     @Override
