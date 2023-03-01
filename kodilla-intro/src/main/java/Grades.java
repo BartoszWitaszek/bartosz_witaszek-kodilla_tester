@@ -26,18 +26,17 @@ public class Grades {
         this.size++;
     }
 
-    public int lastOne(){
-        return (this.grades[this.size-1]);
+    public int lastOne() {
+        return (this.grades[this.size - 1]);
     }
 
-    public double averageGrade(){
+    public double averageGrade() {
         double sum = 0.0;
-        for (int i=0; i < this.size; i++)
-        {
+        for (int i = 0; i < this.size; i++) {
             sum += grades[i];
         }
         System.out.println("Sum of grades: " + sum);
         System.out.println("Number of grades: " + size);
-        return sum/size;
+        return sum / size;
     }
 }

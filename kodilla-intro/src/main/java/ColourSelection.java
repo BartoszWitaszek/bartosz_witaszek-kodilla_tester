@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ColourSelection {
 
     public static void main(String[] args) {
@@ -7,7 +8,7 @@ public class ColourSelection {
         System.out.println("Selected colour: " + result);
     }
 
-    public static String getSelectColour(){
+    public static String getSelectColour() {
         Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println("Select colour (W-white, R-red, C-cyan, O-orange, G-gold, A-amber):");

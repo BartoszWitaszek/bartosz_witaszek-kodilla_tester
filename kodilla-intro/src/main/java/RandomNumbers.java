@@ -9,8 +9,6 @@ public class RandomNumbers {
     public static void main(String[] args) {
         RandomNumbers draw = new RandomNumbers();
         draw.drawNumbers();
-        System.out.println("Min: " + draw.getMin());
-        System.out.println("Max: " + draw.getMax());
     }
 
     public void drawNumbers() {
@@ -22,19 +20,21 @@ public class RandomNumbers {
             temp = random.nextInt(31);
             sum += temp;
 
-            if (temp > this.max) {
-                this.max = temp;
-            }
-            if (temp < this.min) {
-                this.min = temp;
-            }
+            System.out.println(getMax(temp));
+            System.out.println(getMin(temp));
         }
     }
-    public int getMax(){
+    public int getMax(int temp){
+        if (temp > this.max) {
+            this.max = temp;
+        }
         return this.max;
     }
 
-    public int getMin(){
+    public int getMin(int temp){
+        if (temp < this.min) {
+            this.min = temp;
+        }
         return this.min;
     }
 }
