@@ -16,7 +16,7 @@ public class School {
         return schoolName;
     }
 
-    public int getSize(){
+    public int getSize() {
         return students.size();
     }
 

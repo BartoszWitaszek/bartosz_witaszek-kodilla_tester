@@ -23,7 +23,7 @@ public class SchoolDirectory {
         schoolDirectory.put(libby, libbySchool);
 
         for (Map.Entry<Principal, School> schoolEntry : schoolDirectory.entrySet()) {
-            System.out.println("Principal: " + schoolEntry.getKey().getPrincipalName() + ", school: " + schoolEntry.getValue().getSchoolName() + ", number od students: " + schoolEntry.getValue().getSize());
+            System.out.println("Principal: " + schoolEntry.getKey().getPrincipalName() + ", school: " + schoolEntry.getValue().getSchoolName() + ", number of students: " + schoolEntry.getValue().getSize());
         }
     }
 }
