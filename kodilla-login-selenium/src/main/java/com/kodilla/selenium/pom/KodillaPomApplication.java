@@ -6,11 +6,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class KodillaPomApplication {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "chromedriver");
+        System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.navigate().to("https://kodilla.com/pl/test/login");
         KodillaLoginPom loginPom = new KodillaLoginPom(driver);
-        loginPom.login("test@kodilla.com", "haslo");
+        loginPom.login("test@kodilla.com", "kodilla123");
         driver.close();
     }
 }
