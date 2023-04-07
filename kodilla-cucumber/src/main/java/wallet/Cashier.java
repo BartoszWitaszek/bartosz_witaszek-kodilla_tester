@@ -10,6 +10,7 @@ public class Cashier {
 
     public void withdraw(Wallet wallet, int amount) {
         if (wallet.getBalance() >= amount && amount > 0) {
+            wallet.debit(amount);
             cashSlot.dispense(amount);
         } else
             this.errorMessage = "This amount is incorrect!";
