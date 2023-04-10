@@ -14,6 +14,15 @@ public class AnimalFactory {
     }
 
     @Bean
+    public Cat createCat() {
+        return new Cat();
+    }
+    @Bean
+    public Duck createDuck() {
+        return new Duck();
+    }
+
+    @Bean
     public Animal randomAnimal() {
         Animal animal;
         Random generator = new Random();
